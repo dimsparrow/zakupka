@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% block styles %}
+	    <link rel="stylesheet" href="./css/all.css">
+	{% endblock %}
+	<script  src="./js/require.js"  data-main="{% block jsEntryPoint %}./js/index{% endblock %}"></script>
+</head>
+<body>
+	<div class="wrapper">
+		{% include './blocks/_header.twig' %}
+		<div class="main-holder">
+			{% include '../layout/modules/_img-section.twig' %}
+			<div class="main">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+		{% include './blocks/_footer.twig' %}
+	</div>
+</body>
+</html>

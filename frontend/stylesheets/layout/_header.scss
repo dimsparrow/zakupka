@@ -1,0 +1,99 @@
+.header {
+	margin: 0 0 20px;
+	&__holder {
+		display: table;
+		border-radius: 0 0 10px 10px;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		background: #fff;
+		box-shadow: 1px 1px 7px 0 #eee;
+	}
+	.table-cell {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 18px 10px;
+		border-right: 1px solid #e2e2e2;
+		color: $font-color;
+		&:last-child {
+			border-right: none;
+		}
+		&:hover {
+			background: rgba(250, 250, 250, .6);
+		}
+	}
+	.logo-holder {
+		text-align: left;
+		&:hover {
+			background: none;
+		}
+	}
+	.logo {
+		margin: 0 10px 0 0;
+		display: inline-block;
+		vertical-align: middle;
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+	.btn-vip {
+		margin: 0 10px 0 0;
+	}
+ 	.rating {
+		.fa {
+			color: #fca919;
+		}
+	}
+	.reg-company {
+		position: relative;
+		span {
+			color: $color-str;
+		}
+	}
+	.reg-icon {
+		display: inline-block;
+		vertical-align: middle;
+		background: url('../img/sprite.png') no-repeat -49px -31px;
+		width: 16px;
+		height: 16px;
+		margin: 0 10px 0 0;
+	}
+	.call {
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			bottom: -5px;
+			border-bottom: 1px dashed $color-str;
+		}
+	}
+	.tel-icon {
+		display: inline-block;
+		vertical-align: middle;
+		background: url('../img/sprite.png') no-repeat -5px -112px;
+		width: 16px;
+		height: 16px;
+		margin: 0 10px 0 0;
+	}
+	.tel {
+		font-size: $font-size+4;
+		span {
+			color: $color-str;
+		}
+	}
+	.basket {
+		position: relative;
+	}
+	.basket-icon {
+		display: inline-block;
+		vertical-align: middle;
+		background: url('../img/sprite.png') no-repeat -49px -5px;
+		width: 16px;
+		height: 16px;
+		margin: 0 10px 0 0;
+	}
+}

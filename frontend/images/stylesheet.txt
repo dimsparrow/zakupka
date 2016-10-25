@@ -1,0 +1,188 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+   
+ display: block;
+}
+
+.
+sprite-bank {
+    width: 34px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+
+.sprite-basket {
+    width: 16px;
+    height: 16px;
+    background-position: -49px -5px;
+}
+
+
+.sprite-basket-w {
+    width: 19px;
+    height: 19px;
+    background-position: -75px -5px;
+}
+
+
+.sprite-car {
+    width: 16px;
+    height: 14px;
+    background-position: -104px -5px;
+}
+
+
+.sprite-dr {
+    width: 20px;
+    height: 20px;
+    background-position: -104px -29px;
+}
+
+
+.sprite-face {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -59px;
+}
+
+
+.sprite-fr {
+    width: 16px;
+    height: 16px;
+    background-position: -31px -59px;
+}
+
+
+.sprite-geo {
+    width: 10px;
+    height: 15px;
+    background-position: -134px -5px;
+}
+
+
+.sprite-good {
+    width: 16px;
+    height: 16px;
+    background-position: -57px -59px;
+}
+
+
+.sprite-heart {
+    width: 16px;
+    height: 15px;
+    background-position: -83px -59px;
+}
+
+
+.sprite-lang {
+    width: 17px;
+    height: 17px;
+    background-position: -109px -59px;
+}
+
+
+.sprite-mail {
+    width: 16px;
+    height: 12px;
+    background-position: -5px -86px;
+}
+
+
+.sprite-mail-r {
+    width: 16px;
+    height: 12px;
+    background-position: -31px -86px;
+}
+
+
+.sprite-mail-wh {
+    width: 19px;
+    height: 15px;
+    background-position: -57px -86px;
+}
+
+
+.sprite-master {
+    width: 59px;
+    height: 35px;
+    background-position: -86px -86px;
+}
+
+
+.sprite-money {
+    width: 16px;
+    height: 16px;
+    background-position: -154px -5px;
+}
+
+
+.sprite-reg {
+    width: 16px;
+    height: 16px;
+    background-position: -49px -31px;
+}
+
+
+.sprite-search {
+    width: 19px;
+    height: 19px;
+    background-position: -136px -31px;
+}
+
+
+.sprite-shi {
+    width: 14px;
+    height: 16px;
+    background-position: -136px -60px;
+}
+
+
+.sprite-skype {
+    width: 16px;
+    height: 16px;
+    background-position: -155px -86px;
+}
+
+
+.sprite-tel {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -112px;
+}
+
+
+.sprite-tel-w {
+    width: 16px;
+    height: 16px;
+    background-position: -31px -112px;
+}
+
+
+.sprite-tw {
+    width: 16px;
+    height: 16px;
+    background-position: -57px -112px;
+}
+
+
+.sprite-vip {
+    width: 13px;
+    height: 11px;
+    background-position: -155px -112px;
+}
+
+
+.sprite-visa {
+    width: 66px;
+    height: 20px;
+    background-position: -83px -133px;
+}
+
+
+.sprite-vk {
+    width: 16px;
+    height: 16px;
+    background-position: -180px -5px;
+}

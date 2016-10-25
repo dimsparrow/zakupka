@@ -1,0 +1,63 @@
+.footer {
+	&__holder  {
+		background: #fff;
+		border-radius: 10px 10px 0 0;
+		padding: 24px 20px;
+	}
+	.brand-holder {
+		float: right;
+		margin: 7px 0 0;
+	}
+	.counter-holder {
+		display: block;
+	}
+	.count-top, .count-bottom {
+		display: block;
+	}
+	.count-top {
+		margin: 0 0 4px;
+	}
+	.company {
+		font-size: $font-size+2;
+		margin: 0 0 10px;
+	}
+	.created {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__company {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.platform {
+		display: inline-block;
+		vertical-align: top;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 13px;
+			position: relative;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+			&:after {
+				content: '|';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			a {
+				color: $color-str;
+				&:hover {
+					opacity: .7;
+				}
+			}
+		}
+	}
+}

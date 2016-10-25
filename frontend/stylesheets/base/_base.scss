@@ -1,0 +1,13 @@
+body {
+	font: #{$font-size}/#{$line-height} $font-sans;
+	color: $font-color;
+	min-width: 320px;
+	background: url('../img/bg-color.png');
+}
+.clearfix {
+	@include clearfix;
+}
+.container {
+	@include container (1580px, 0 15px);
+	margin: 0 auto;
+}
