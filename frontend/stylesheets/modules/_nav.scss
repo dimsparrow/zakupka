@@ -1,0 +1,51 @@
+.nav-menu {
+	font-size: $font-size+4;
+	li {
+		border-top: 1px solid #e2e2e2;
+		a {
+			padding: 8px 20px;
+			display: block;
+			color: $font-color;
+		}
+		&:first-child {
+			border-top: 0;
+		}
+	}
+	.sub-menu {
+		li {
+			a {
+				padding-left: 40px;
+			}
+			&:first-child {
+				border-top: 1px solid #e2e2e2;
+			}
+		}
+	}
+	.count {
+		color: #acacac;
+	}
+	.sub-chek {
+		position: relative;
+		&:before {
+			content: '\f0da';
+			font: 14px/18px 'FontAwesome';
+			color: $color-str;
+			position: absolute;
+			left: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	.chek {
+		position: relative;
+		&:after {
+			content: '\f0da';
+			font: 18px/22px 'FontAwesome';
+			color: $color-str;
+			position: absolute;
+			right: 22px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

@@ -1,2 +1,18 @@
-
+.main-holder {
+	margin: 0 0 20px;
+}
+.main {
+	.content {
+		float: right;
+		width: 72%;
+		background: #fff;
+		border-radius: 10px;
+	}
+	.sidebar {
+		padding: 20px;
+		width: 24%;
+		background: #fff;
+		border-radius: 10px;
+	}
+}
 

@@ -1034,6 +1034,10 @@ body {
   padding: 0 15px;
   margin: 0 auto; }
 
+.title-contact {
+  font-size: 16px;
+  margin: 0 0 6px; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3355,6 +3359,32 @@ i {
 .rating .fa {
   color: #fca919; }
 
+.tel-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../img/sprite.png") no-repeat -5px -112px;
+  width: 18px;
+  height: 17px;
+  margin: 0 10px 0 0; }
+
+.fa-envelope-o {
+  color: #e2001a;
+  margin: 0 15px 0 0;
+  font-size: 16px; }
+
+.fa-skype {
+  color: #e2001a;
+  margin: 0 15px 0 0;
+  font-size: 18px; }
+
+.actual {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../img/sprite.png") no-repeat -136px -60px;
+  width: 14px;
+  height: 16px;
+  margin: 0 8px 0 0; }
+
 .btn-vip {
   display: inline-block;
   vertical-align: middle;
@@ -3408,6 +3438,46 @@ i {
   .btn-brand:hover {
     opacity: .7; }
 
+.btn-mail {
+  display: inline-block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 40px;
+  padding-left: 83px;
+  position: relative;
+  background: #80b200;
+  color: #fff;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 1px 0px #fff inset;
+  border: 1px solid #80b200;
+  box-sizing: border-box; }
+  .btn-mail span {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 40px;
+    height: 40px;
+    background: #646363;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 1px 1px 0px #fff inset;
+    border: 1px solid #646363;
+    box-sizing: border-box; }
+    .btn-mail span:before {
+      content: '\f003';
+      font: 16px/20px 'FontAwesome';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .btn-mail:hover span {
+    opacity: .7; }
+  .btn-mail:active {
+    margin-top: 2px;
+    margin-bottom: 13px; }
+
 .btn-new {
   padding: 8px 18px;
   background: #43ccef;
@@ -3451,7 +3521,7 @@ i {
     bottom: -8px;
     width: 0;
     height: 0;
-    border-top: 0px solid transparent;
+    border-top: 0 solid transparent;
     border-right: 15px solid #b59b09;
     border-bottom: 9px solid transparent; }
 
@@ -3754,21 +3824,21 @@ i {
     border-radius: 5px 5px 0 0;
     font-size: 18px; }
 
-.form-holder {
+.search-holder {
   position: relative;
-  width: 300px;
+  width: 100%;
   margin: 0 0 20px; }
-  .form-holder input {
+  .search-holder input {
     width: 100%;
     height: 40px;
-    padding-left: 10px;
+    padding: 3px 50px 3px 10px;
     border: 1px solid #00957c;
     border-radius: 5px;
     outline: none;
     color: #959595;
     font-style: italic;
     font-size: 14px; }
-  .form-holder button {
+  .search-holder button {
     position: absolute;
     top: 0;
     right: 0;
@@ -3779,7 +3849,7 @@ i {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 3px 7px 0px #fff inset; }
-    .form-holder button:before {
+    .search-holder button:before {
       content: "";
       position: absolute;
       background: url("../img/sprite.png") no-repeat -136px -31px;
@@ -3788,8 +3858,133 @@ i {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-    .form-holder button:hover {
+    .search-holder button:hover {
       opacity: .7; }
+
+.nav-menu {
+  font-size: 18px; }
+  .nav-menu li {
+    border-top: 1px solid #e2e2e2; }
+    .nav-menu li a {
+      padding: 8px 20px;
+      display: block;
+      color: #000; }
+    .nav-menu li:first-child {
+      border-top: 0; }
+  .nav-menu .sub-menu li a {
+    padding-left: 40px; }
+  .nav-menu .sub-menu li:first-child {
+    border-top: 1px solid #e2e2e2; }
+  .nav-menu .count {
+    color: #acacac; }
+  .nav-menu .sub-chek {
+    position: relative; }
+    .nav-menu .sub-chek:before {
+      content: '\f0da';
+      font: 14px/18px 'FontAwesome';
+      color: #e2001a;
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%); }
+  .nav-menu .chek {
+    position: relative; }
+    .nav-menu .chek:after {
+      content: '\f0da';
+      font: 18px/22px 'FontAwesome';
+      color: #e2001a;
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.contact-holder {
+  font-size: 16px; }
+  .contact-holder .title {
+    color: #fff;
+    background: #e2001a;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px;
+    margin: 0 0 18px; }
+  .contact-holder .contact-section {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e2e2; }
+    .contact-holder .contact-section:last-child {
+      border-bottom: 0; }
+  .contact-holder .btn-vip {
+    margin-right: 8px; }
+  .contact-holder .shop-name {
+    font-size: 18px;
+    margin: 0 0 10px; }
+  .contact-holder .holder-row {
+    margin: 0 0 5px; }
+  .contact-holder .tel-number-2, .contact-holder .tel-number-3 {
+    padding: 0 0 0 33px; }
+  .contact-holder .adress a {
+    color: #e2001a; }
+    .contact-holder .adress a:hover {
+      opacity: .7; }
+  .contact-holder dl {
+    margin: 0 0 5px 0; }
+    .contact-holder dl dt, .contact-holder dl dd {
+      display: inline-block; }
+  .contact-holder .btn-mail-holder {
+    text-align: center; }
+
+.breadcrumbs {
+  background: #fff;
+  border-radius: 5px;
+  font-size: 0; }
+  .breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 17px; }
+  .breadcrumbs a {
+    padding: 12px 25px;
+    display: inline-block;
+    color: #000;
+    position: relative;
+    box-sizing: border-box; }
+    .breadcrumbs a:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -18px;
+      border-top: 21.5px solid transparent;
+      border-bottom: 21.5px solid transparent;
+      border-left: 21.5px solid #e6e6e6;
+      z-index: 1; }
+    .breadcrumbs a:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -17px;
+      border-top: 21.5px solid transparent;
+      border-bottom: 21.5px solid transparent;
+      border-left: 21.5px solid #fff;
+      z-index: 2; }
+    .breadcrumbs a:hover {
+      background: rgba(230, 230, 230, 0.3); }
+      .breadcrumbs a:hover:before {
+        content: none; }
+      .breadcrumbs a:hover:after {
+        border-left: 19px solid rgba(230, 230, 230, 0.3); }
+  .breadcrumbs .current {
+    color: #e2001a; }
+  .breadcrumbs .cheked {
+    position: relative; }
+    .breadcrumbs .cheked:before {
+      content: '\f0d7';
+      font: 10px/12px 'FontAwesome';
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%); }
 
 .header {
   margin: 0 0 20px; }
@@ -3845,13 +4040,6 @@ i {
       height: 1px;
       bottom: -5px;
       border-bottom: 1px dashed #e2001a; }
-  .header .tel-icon {
-    display: inline-block;
-    vertical-align: middle;
-    background: url("../img/sprite.png") no-repeat -5px -112px;
-    width: 16px;
-    height: 16px;
-    margin: 0 10px 0 0; }
   .header .tel {
     font-size: 18px; }
     .header .tel span {
@@ -3865,6 +4053,21 @@ i {
     width: 16px;
     height: 16px;
     margin: 0 10px 0 0; }
+
+.main-holder {
+  margin: 0 0 20px; }
+
+.main .content {
+  float: right;
+  width: 72%;
+  background: #fff;
+  border-radius: 10px; }
+
+.main .sidebar {
+  padding: 20px;
+  width: 24%;
+  background: #fff;
+  border-radius: 10px; }
 
 .footer__holder {
   background: #fff;
