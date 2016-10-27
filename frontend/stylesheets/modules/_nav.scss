@@ -6,6 +6,9 @@
 			padding: 8px 20px;
 			display: block;
 			color: $font-color;
+			&:hover {
+				background: rgba(230, 230, 230, .3);
+			}
 		}
 		&:first-child {
 			border-top: 0;
@@ -46,6 +49,11 @@
 			right: 22px;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+	}
+	.ui-state-active {
+		&:after {
+			content: '\f0d7';
 		}
 	}
 }
