@@ -68,7 +68,7 @@
 	}
 	.tel {
 		font-size: $font-size+4;
-		span {
+		.strong {
 			color: $color-str;
 		}
 	}
@@ -83,4 +83,47 @@
 		height: 16px;
 		margin: 0 10px 0 0;
 	}
+}
+@include media (desktop-middle) {
+	.header {
+		.basket {
+			display: none;
+		}
+		.tel-icon {
+			display: none;
+		}
+		.reg-icon {
+			display: none;
+		}
+	}
+}
+@include media (desktop) {
+	.header {
+		.tel {
+			position: relative;
+			padding: 0 30px;
+			&:before {
+				content: '\f095';
+				font: 16px/20px 'FontAwesome';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.tel-number {
+			display: none;
+		}
+		.call {
+			&:after {
+				content: none;
+			}
+		}
+		.btn-vip {
+			display: none;
+		}
+		.rating {
+			display: none;
+		}
+ 	}
 }

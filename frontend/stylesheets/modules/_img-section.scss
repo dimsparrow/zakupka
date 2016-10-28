@@ -11,10 +11,8 @@
 	.logo-shop {
 		position: absolute;
 		left: 50%;
-		top: 70%;
-		transform: translate(-50%, -70%);
-		-webkit-transform: translate(-50%, -70%);
-		-ms-transform: translate(-50%, -70%);
+		top: 65%;
+		transform: translate(-50%, -65%);
 		a {
 			display: block;
 			height: 100%;
@@ -29,5 +27,18 @@
 		background: rgba(255, 255, 255, .6);
 		border-radius: 5px 5px 0 0;
 		font-size: $font-size+4;
+	}
+}
+@include media (desktop-middle) {
+	.img-holder {
+		overflow: hidden;
+	}
+	.img-section {
+		.main-img {
+			width: inherit;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }

@@ -26,8 +26,18 @@
 	.holder-row {
 		margin: 0 0 5px;
 	}
-	.tel-number-2, .tel-number-3 {
-		padding: 0 0 0 33px;
+	.tel-icon, .fa-envelope-o, .fa-skype {
+		float: left;
+	}
+	.holder-text {
+		overflow: hidden;
+	}
+	.tel-number {
+		display: block;
+		margin: 0 0 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	.adress {
 		a {
@@ -45,5 +55,22 @@
 	}
 	.btn-mail-holder {
 		text-align: center;
+	}
+}
+
+@include media (desktop) {
+	.search-holder {
+		input {
+			font-size: 12px;
+		}
+	}
+	.rating {
+		display: block;
+		padding: 5px 0;
+	} 
+	.btn-mail {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 20px;
 	}
 }

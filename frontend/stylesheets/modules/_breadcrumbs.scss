@@ -2,6 +2,7 @@
 	background: #fff;
 	border-radius: 10px;
 	margin: 0 0 20px;
+	box-shadow: 1px 1px 7px 0 #eee;
 }
 .breadcrumbs {
 	font-size: 0;
@@ -84,5 +85,17 @@
 		background: url('../img/sprite.png') no-repeat -109px -59px;
 		width: 17px;
 		height: 17px;
+	}
+}
+@include media (desktop-middle) {
+	.holder-select {
+		display: none;
+	}
+}
+@include media (desktop) {
+	.breadcrumbs {
+		li {
+			font-size: 10px;
+		}
 	}
 }

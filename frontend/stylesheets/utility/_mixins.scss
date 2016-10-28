@@ -16,9 +16,6 @@
 }
 
 @mixin media($point) {
- 	@if $point == desktop-large {
-	@media only screen and (max-width: $desktop-large) { @content; }
-	}
 	@if $point == desktop-middle {
 	@media only screen and (max-width: $desktop-middle) { @content; }
 	}

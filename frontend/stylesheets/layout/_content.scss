@@ -12,6 +12,15 @@
 		background: #fff;
 		border-radius: 10px;
 		float: left;
+		box-shadow: 1px 1px 7px 0 #eee;
+	}
+}
+
+@include media (desktop-middle) {
+	.main {
+		.content{
+			width: 70%;
+		}	
 	}
 }
 
