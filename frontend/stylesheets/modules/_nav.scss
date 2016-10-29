@@ -57,7 +57,8 @@
 		}
 	}
 }
-@include media (desktop)  {
+
+@include media (desktop) {
 	.nav-menu {
 		font-size: $font-size;
 	}

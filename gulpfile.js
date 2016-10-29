@@ -60,11 +60,11 @@ gulp.task('stylesheets', function () {
   return gulp.src('./frontend/stylesheets/**/*.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
-/*	.pipe(autoprefixer({
+	.pipe(autoprefixer({
 		browsers: ['last 30 versions'],
 		cascade: false
 	}))
-	.pipe(cleanCSS({compatibility: 'ie8'}))*/
+	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(sourcemaps.write('./maps'))
 	.pipe(gulp.dest('./public/css'))
 	.pipe(browserSync.stream());

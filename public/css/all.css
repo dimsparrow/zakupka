@@ -2824,6 +2824,10 @@ i {
     .search-holder button:hover {
       opacity: .7; }
 
+@media only screen and (max-width: 767px) {
+  .search-holder {
+    display: none; } }
+
 .nav-menu {
   font-size: 18px; }
   .nav-menu li {
@@ -3006,6 +3010,10 @@ i {
 @media only screen and (max-width: 1023px) {
   .breadcrumbs li {
     font-size: 10px; } }
+
+@media only screen and (max-width: 767px) {
+  .breadcrumbs-holder {
+    display: none; } }
 
 .card-holder {
   background: #fff;
@@ -3224,6 +3232,33 @@ i {
     display: inline-block;
     margin-right: 0; } }
 
+@media only screen and (max-width: 767px) {
+  .card-holder {
+    margin-bottom: 10px; }
+    .card-holder .buy-info .title-product {
+      font-size: 16px; }
+    .card-holder .buy-info .two-columns .order-product {
+      float: none;
+      width: 100%; }
+    .card-holder .buy-info .two-columns .pay-product {
+      float: none;
+      width: 100%; }
+    .card-holder .buy-info .holder-code {
+      margin-bottom: 15px; }
+      .card-holder .buy-info .holder-code .code {
+        margin-right: 3px; }
+    .card-holder .holder-about-pr {
+      text-align: center; }
+      .card-holder .holder-about-pr .about-product li {
+        display: block;
+        margin: 5px 0; }
+        .card-holder .holder-about-pr .about-product li:before {
+          content: none; }
+        .card-holder .holder-about-pr .about-product li a:before {
+          content: none; }
+        .card-holder .holder-about-pr .about-product li a:hover {
+          opacity: .7; } }
+
 .header {
   margin: 0 0 20px; }
   .header__holder {
@@ -3295,6 +3330,8 @@ i {
 @media only screen and (max-width: 1365px) {
   .header .basket {
     display: none; }
+  .header .basket-icon {
+    margin-right: 0; }
   .header .tel-icon {
     display: none; }
   .header .reg-icon {
@@ -3320,12 +3357,28 @@ i {
   .header .rating {
     display: none; } }
 
+@media only screen and (max-width: 767px) {
+  .header .tel {
+    display: none; }
+  .header .call {
+    display: none; }
+  .header .tel-icon {
+    display: inline-block;
+    margin: 0; }
+  .header .reg-icon {
+    display: inline-block;
+    margin: 0; }
+  .header .reg-company {
+    display: none; } }
+
 .main-holder {
   margin: 0 0 20px; }
 
 .main .content {
   float: right;
   width: 72%; }
+  .main .content .contact-holder {
+    display: none; }
 
 .main .sidebar {
   padding: 20px;
@@ -3338,6 +3391,24 @@ i {
 @media only screen and (max-width: 1365px) {
   .main .content {
     width: 70%; } }
+
+@media only screen and (max-width: 767px) {
+  .main .content {
+    float: none;
+    width: 100%; }
+    .main .content .contact-holder {
+      display: block;
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px 20px 22px;
+      box-shadow: 1px 1px 7px 0 #eee; }
+  .main .sidebar {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; }
+    .main .sidebar .contact-holder {
+      display: none; } }
 
 .footer__holder {
   background: #fff;
@@ -3396,5 +3467,16 @@ i {
 @media only screen and (max-width: 1023px) {
   .footer .brand-holder {
     display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    text-align: center; }
+    .footer .created {
+      display: block; }
+    .footer .platform li {
+      display: block;
+      padding: 5px 0; }
+      .footer .platform li:after {
+        content: none; } }
 
 /*# sourceMappingURL=maps/all.css.map */

@@ -89,6 +89,9 @@
 		.basket {
 			display: none;
 		}
+		.basket-icon {
+			margin-right: 0;
+		}
 		.tel-icon {
 			display: none;
 		}
@@ -126,4 +129,25 @@
 			display: none;
 		}
  	}
+}
+@include media (mobile) {
+	.header {
+		.tel {
+			display: none;
+		}
+		.call {
+			display: none;
+		}
+		.tel-icon {
+			display: inline-block;
+			margin: 0;
+		}
+		.reg-icon {
+			display: inline-block;
+			margin: 0;
+		}
+		.reg-company {
+			display: none;
+		}
+	}
 }

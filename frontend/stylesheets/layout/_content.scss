@@ -5,6 +5,9 @@
 	.content {
 		float: right;
 		width: 72%;
+		.contact-holder {
+			display: none;
+		}
 	}
 	.sidebar {
 		padding: 20px;
@@ -20,7 +23,30 @@
 	.main {
 		.content{
 			width: 70%;
-		}	
+		}
 	}
 }
-
+@include media (mobile) {
+	.main {
+		.content {
+			float: none;
+			width: 100%;
+			.contact-holder {
+				display: block;
+				background: #fff;
+				border-radius: 10px;
+				padding: 30px 20px 22px;
+				box-shadow: 1px 1px 7px 0 #eee;
+			}
+		}
+		.sidebar  {
+			float: none;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			.contact-holder {
+				display: none;
+			}
+		}
+	}
+}

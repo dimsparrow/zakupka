@@ -39,3 +39,9 @@
 		}
 	}
 }
+
+@include media (mobile)  {
+	.search-holder {
+		display: none;
+	}
+}

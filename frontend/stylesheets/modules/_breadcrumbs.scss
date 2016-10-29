@@ -99,3 +99,8 @@
 		}
 	}
 }
+@include media (mobile) {
+	.breadcrumbs-holder {
+		display: none;
+	}
+}

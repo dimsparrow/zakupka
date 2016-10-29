@@ -67,6 +67,23 @@
 	.footer {
 		.brand-holder {
 			display: none;
-		}	
+		}
+	}
+}
+@include media (mobile) {
+	.footer {
+		text-align: center;
+		.created {
+			display: block;
+		}
+		.platform {
+			li {
+				display: block;
+				padding: 5px 0;
+				&:after {
+					content: none;
+				}
+			}
+		}
 	}
 }
